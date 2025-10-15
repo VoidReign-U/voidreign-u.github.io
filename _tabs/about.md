@@ -1,8 +1,12 @@
 ---
-# the default layout is 'page'
-icon: fas fa-info-circle
-order: 4
+title: About
+icon: fas fa-terminal
+order: 1
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+## writeup
+Documenting what I break and how I fix it.
+
+## linux
+Living in the terminal — Arch, Debian, Red Hat, Void, and pretty much every flavor I can get my hands on.
+
