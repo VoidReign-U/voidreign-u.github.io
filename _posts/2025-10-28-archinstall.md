@@ -129,10 +129,10 @@ locale-gen
 
 ```sh
 pacman -S base-devel grub efibootmgr grub-btrfs mtools networkmanager reflector
-openssh iptables-nft ipset ```
+openssh iptables-nft ipset 
+```
 
 Install GRUB:
-
 ```sh
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
@@ -153,7 +153,13 @@ chmod 0440 /etc/sudoers.d/yourname
 
 ---
 
-## 13. Enable Services
+## 13. install i3 + Apps Setup
+
+```sh
+sudo pacman -S i3 kitty xorg rofi firefox feh upower git acpid bluez bluez-utils pipewire pipewire-alsa pipewire-pulse wireplumber thunar obsidian cherrytree flameshot yazi mpv ttf-jetbrains-mono ttf-firacode-nerd ttf-noto-nerd
+```
+
+## 14. Enable Services
 
 ```sh
 systemctl enable NetworkManager
@@ -172,7 +178,7 @@ systemctl --user enable --now pipewire
 
 ---
 
-## 14. GPU Drivers (pick your hardware)
+## 15. GPU Drivers (pick your hardware)
 
 ```sh
 # Intel
@@ -187,7 +193,7 @@ pacman -S xf86-video-nouveau
 
 ---
 
-## 15. Enable Login Manager (LY)
+## 17. Enable Login Manager (LY)
 
 ```sh
 pacman -S ly
@@ -196,7 +202,7 @@ systemctl enable ly.service
 
 ---
 
-## 16. Exit & Reboot
+## 18. Exit & Reboot
 
 ```sh
 exit
@@ -206,19 +212,10 @@ reboot
 
 ---
 
-# After First Boot
+## After First Boot
 
-### Log by using shell from options 
 
-## i3 + Apps Setup
-
-```sh
-sudo pacman -S i3 kitty xorg rofi firefox feh upower git acpid bluez bluez-utils pipewire pipewire-alsa pipewire-pulse wireplumber thunar obsidian cherrytree flameshot yazi mpv ttf-jetbrains-mono ttf-firacode-nerd ttf-noto-nerd
-```
-
----
-
-## My Dotfiles (i3 + Zsh + Nvim)
+## My Dotfiles (i3 + Zsh + Nvim + .. .. ect)
 
 ```sh
 git clone https://github.com/VoidReign-U/dotfiles ~/.dotfiles
