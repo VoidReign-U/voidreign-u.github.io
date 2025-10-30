@@ -3,7 +3,6 @@
 > Practical guides and notes on Linux, programming, system customization, cybersecurity, and CTF challenges.
 
 ## About
-`voidreign-u.github.io` is a personal site for sharing hands-on content, experiments, and practical knowledge in:
 
 - Linux systems and customization  `#system`  
 - Programming and scripting          `#programming`  
